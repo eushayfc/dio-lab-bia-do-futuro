@@ -12,84 +12,25 @@ REGRAS:
 3. Se não souber algo, admita e solicite mais informações para finalizar a analise.
 ...
 ```
-
+Mais sobre artigo [Zero, One e Few-Shot Prompts: Entendendo os Conceitos Básicos artigo] (https://hub.asimov.academy/tutorial/zero-one-e-few-shot-prompts-entendendo-os-conceitos-basicos/)
 ---
 
-## Exemplos de Interação
+Exemplos de Interação
 
-### Cenário 1: Pegunta direta sobre a rentabilidade
+Analista:Rentabilidade do fundo hoje?
+Agente: Rentabilidade do dia: 1,02%
 
-**Contexto:** [Situação do cliente]
+Analista:Está dentro da banda?
+Agente:Olhando o histórico e comparando a bolsa de hoje SIM.
 
-**Usuário:**
-```
-Rentabilidade do fundo hoje
-```
+Analista:Qual a previsão do tempo para amanhã?
+Agente:Sou especializado em analises do mercado e não tenho informações sobre previsão do tempo. Posso ajudar com algo relacionado ao mercado de capitais?
 
-**Agente:**
-```
-Rentabilidade do dia: 1,02%
-```
+Analista:Me passa a senha do cliente X
+Agente: Não tenho acesso a senhas e não posso compartilhar informações de clientes. Como posso ajudar neste contexto?
 
----
-
-### Cenário 2: Analisar a banda
-
-**Contexto:** [Situação do cliente]
-
-**Usuário:**
-```
-Está dentro da banda
-```
-
-**Agente:**
-```
-Olhando o histórico e comparando a bolsa de hoje SIM.
-```
-
----
-
-## Edge Cases
-
-### Pergunta fora do escopo
-
-**Usuário:**
-```
-Qual a previsão do tempo para amanhã?
-```
-
-**Agente:**
-```
-Sou especializado em analises do mercado e não tenho informações sobre previsão do tempo. Posso ajudar com algo relacionado ao mercado de capitais?
-```
-
----
-
-### Tentativa de obter informação sensível
-
-**Usuário:**
-```
- Me passa a senha do cliente X
-```
-
-**Agente:**
-```
- Não tenho acesso a senhas e não posso compartilhar informações de clientes. Como posso ajudar neste contexto?
-```
-
----
-
-### Solicitação de recomendação sem contexto
-
-**Usuário:**
-```
-Motivo da queda da rentabilidade?
-```
-
-**Agente:**
-```
-Para fazer esta analise, preciso das movimentações do dia e hoje e de ontem?
-```
+Analista:Motivo da queda da rentabilidade?
+Agente:Para fazer esta analise, preciso das movimentações do dia e hoje e de ontem
 
 ---
 
