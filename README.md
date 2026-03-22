@@ -10,7 +10,7 @@ Fundos de investimento estão sujeitos a erros operacionais no lançamento diár
 
 ## A Solução
 
-A **Shay** é uma analista de backoffice baseada em IA que:
+A **Shay** é uma analista de mercado de capitais baseada em IA que:
 
 - 📈 Compara a rentabilidade diária do fundo com o histórico e o IBOV
 - 🚨 Sinaliza automaticamente valores fora da banda esperada
@@ -44,7 +44,7 @@ Os dados contêm: `data`, `fundo`, `rentabilidade`, `IBOV`.
 
 **System Prompt — comportamento do agente:**
 
-> Você é um analista de backoffice de fundos de investimento. Seu papel é identificar possíveis erros operacionais na rentabilidade. Identifique outliers, compare com o IBOV e sinalize dias suspeitos. Não responda sobre outros assuntos.
+> Você é um analista de mercado de capitais. Seu papel é identificar possíveis erros operacionais na rentabilidade. Identifique outliers, compare com o IBOV e sinalize dias suspeitos. Não responda sobre outros assuntos.
 
 **Regras:**
 - Fora da banda → `FORA DA BANDA: data -> rentabilidade (possível erro operacional)`
