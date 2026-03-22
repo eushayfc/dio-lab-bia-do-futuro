@@ -1,6 +1,6 @@
 # 📊 Shay — Analista Inteligente 
 
-Agente de backoffice especializado em **identificar erros operacionais de rentabilidade** em fundos de investimento, comparando histórico e benchmark (IBOV).
+Agente de backoffice especializado em **identificar erros operacionais de rentabilidade** em fundos e carteiras, comparando histórico e benchmark (IBOV).
 
 ---
 
