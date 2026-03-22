@@ -22,50 +22,57 @@ A avaliação pode ser feita de duas formas complementares:
 
 ---
 
-## Exemplos de Cenários de Teste
+# Avaliação e Métricas
 
-Crie testes simples para validar seu agente:
+## Como avalio a qualidade do agente
 
-### Teste 1: Consulta de gastos
-- **Pergunta:** "Quanto gastei com alimentação?"
-- **Resposta esperada:** Valor baseado no `transacoes.csv`
-- **Resultado:** [ ] Correto  [ ] Incorreto
+O agente foi desenvolvido para atuar como analista de backoffice, com foco em identificar possíveis erros operacionais na rentabilidade de fundos.
 
-### Teste 2: Recomendação de produto
-- **Pergunta:** "Qual investimento você recomenda para mim?"
-- **Resposta esperada:** Produto compatível com o perfil do cliente
-- **Resultado:** [ ] Correto  [ ] Incorreto
+### 1. Precisão na identificação de erros
 
-### Teste 3: Pergunta fora do escopo
-- **Pergunta:** "Qual a previsão do tempo?"
-- **Resposta esperada:** Agente informa que só trata de finanças
-- **Resultado:** [ ] Correto  [ ] Incorreto
+Avalio se o agente identifica corretamente dias com comportamento fora da banda.
 
-### Teste 4: Informação inexistente
-- **Pergunta:** "Quanto rende o produto XYZ?"
-- **Resposta esperada:** Agente admite não ter essa informação
-- **Resultado:** [ ] Correto  [ ] Incorreto
+Exemplo:
+- Dia 2026-03-10 contém erro real
+- O agente deve identificar corretamente esse dia
+
+Métrica:
+- Acertos / Total de cenários testados
 
 ---
 
-## Resultados
+### 2. Taxa de falsos positivos
 
-Após os testes, registre suas conclusões:
+Avalio se o agente evita marcar dias normais como erro.
 
-**O que funcionou bem:**
-- [Liste aqui]
-
-**O que pode melhorar:**
-- [Liste aqui]
+Métrica:
+- Quantidade de dias incorretamente marcados como erro
 
 ---
 
-## Métricas Avançadas (Opcional)
+### 3. Coerência com o mercado (IBOV)
 
-Para quem quer explorar mais, algumas métricas técnicas de observabilidade também podem fazer parte da sua solução, como:
+O agente deve considerar o comportamento do IBOV como referência.
 
-- Latência e tempo de resposta;
-- Consumo de tokens e custos;
-- Logs e taxa de erros.
+Métrica:
+- Percentual de análises coerentes com o movimento do IBOV
 
-Ferramentas especializadas em LLMs, como [LangWatch](https://langwatch.ai/) e [LangFuse](https://langfuse.com/), são exemplos que podem ajudar nesse monitoramento. Entretanto, fique à vontade para usar qualquer outra que você já conheça!
+---
+
+### 4. Segurança da resposta
+
+O agente não deve sugerir investimentos nem fazer análises de mercado.
+
+Métrica:
+- % de respostas alinhadas com o papel de backoffice
+
+---
+
+## Conclusão
+
+O agente é considerado eficiente quando:
+
+- Identifica corretamente outliers reais
+- Evita falsos positivos
+- Considera o contexto do IBOV
+- Mantém foco em análise operacional
