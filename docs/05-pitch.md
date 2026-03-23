@@ -16,7 +16,7 @@ Hoje, essa validação muitas vezes é manual através de planilhas de Excel e s
 Para resolver esse problema, desenvolvi a Analista AMC, uma agente inteligente focado em backoffice de fundos.
 Ele analisa automaticamente a rentabilidade dos últimos dias, calcula uma banda de normalidade com base na média e desvio padrão, e identifica outliers.
 Além disso, ele compara o comportamento do fundo com o IBOV, garantindo que a análise leve em consideração o movimento do mercado.
-Quando identifica um desvio relevante que não acompanha o IBOV, o sistema sinaliza como possível erro operacional, permitindo que o analista reprocesse o fundo e corrija tal erro operacional.
+Quando identifica um desvio relevante que não acompanha o IBOV, o sistema sinaliza como possível erro operacional, permitindo que o analista chegue ao fundo com mais agilidade e corrija tal erro operacional .
 
 ### 3. Demonstração (1 min)
 > Mostre o agente funcionando (pode ser gravação de tela)
