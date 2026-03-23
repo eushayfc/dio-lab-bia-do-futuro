@@ -5,7 +5,7 @@
 ### 1. O Problema (30 seg)
 > Qual dor do cliente você resolve?
 
-No mercado financeiro, fundos de investimento precisam ter suas rentabilidades calculadas diariamente com alta precisão.
+No mercado financeiro, fundos e carteiras precisam ter suas rentabilidades calculadas diariamente com alta precisão.
 Erros operacionais podem acontecer nesse processo, gerando valores inconsistentes que podem impactar relatórios, cotas e decisões internas.
 Hoje, essa validação muitas vezes é manual através de planilhas de Excel e sujeita a falhas humanas, o que aumenta o risco operacional.
 
