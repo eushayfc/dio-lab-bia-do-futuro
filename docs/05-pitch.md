@@ -39,18 +39,5 @@ Esse projeto demonstra como IA pode ser aplicada de forma prática e segura em p
 
 ---
 
-## Checklist do Pitch
-
-- [ ] Duração máxima de 3 minutos
-- [ ] Problema claramente definido
-- [ ] Solução demonstrada na prática
-- [ ] Diferencial explicado
-- [ ] Áudio e vídeo com boa qualidade
-
----
-
-## Link do Vídeo
-
-> Cole aqui o link do seu pitch (YouTube, Loom, Google Drive, etc.)
-
-[Link do vídeo]
+ Local URL: http://localhost:8501
+Network URL: http://192.168.0.86:8501
